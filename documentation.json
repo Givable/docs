@@ -72,12 +72,7 @@
             "group": "FAQs",
             "icon": "help-circle",
             "expandable": false,
-            "pages": [
-              {
-                "title": "How to Manage Documentation",
-                "path": "help-center/faq/how-to-manage-docs"
-              }
-            ]
+            "pages": []
           },
           {
             "group": "Troubleshooting",
