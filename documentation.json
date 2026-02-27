@@ -83,12 +83,7 @@
             "group": "Troubleshooting",
             "icon": "alert-triangle",
             "expandable": false,
-            "pages": [
-              {
-                "title": "Cannot Edit Documentation",
-                "path": "help-center/troubleshooting/cannot-edit-documentation"
-              }
-            ]
+            "pages": []
           },
           {
             "group": "Guides",
