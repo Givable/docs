@@ -1,0 +1,127 @@
+---
+title: Getting Started with Givable
+description: Set up your Givable account and launch your first donation form quickly to begin collecting donations.
+---
+
+## Prerequisites
+
+<Callout kind="info" title="Before You Begin">
+To get started with Givable, ensure you have:
+- A valid email address for account registration
+- Nonprofit organization details (EIN or equivalent for verification)
+- A payment processor account (e.g., Stripe) for receiving donations
+</Callout>
+
+## Create Your Account
+
+Follow these steps to sign up and access your dashboard.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit [https://www.givable.com](https://www.givable.com) and click "Request a Demo" or "Sign Up".
+    
+    Fill in your organization's details, including name, email, and nonprofit status.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from Givable.
+    
+    Click the link to confirm your account.
+  </Step>
+  <Step title="Complete Onboarding" icon="check-circle">
+    Log in at [https://dashboard.givable.com](https://dashboard.givable.com).
+    
+    Connect your payment processor and configure basic settings.
+  </Step>
+</Steps>
+
+## Dashboard Walkthrough
+
+Once logged in, the Givable dashboard provides an intuitive interface to manage forms, campaigns, and donations.
+
+<Image
+  src="https://www.givable.com/wp-content/uploads/2025/10/gvbl_donation_form.jpg"
+  alt="Givable dashboard showing customizable donation forms"
+  width="1024"
+  height="600"
+/>
+
+Key sections include:
+- **Forms**: Create and edit donation forms
+- **Campaigns**: Launch fundraising pages
+- **Donors**: View recurring and one-time gifts
+- **Integrations**: Connect to tools like Salesforce NPSP or webhooks
+
+## Build Your First Donation Form
+
+Create a basic form in minutes.
+
+<Steps>
+  <Step title="Start New Form" icon="plus">
+    From the dashboard, click "New Form".
+    
+    Choose a template or start blank.
+  </Step>
+  <Step title="Customize Fields" icon="edit-3">
+    Add fields for donor name, amount, payment method (Visa, Mastercard, Apple Pay).
+    
+    Enable recurring options for monthly giving.
+  </Step>
+  <Step title="Preview and Save" icon="eye">
+    Preview on desktop and mobile.
+    
+    Save as draft or publish directly.
+  </Step>
+</Steps>
+
+<Image
+  src="https://www.givable.com/wp-content/uploads/2025/10/gvbl_form_upgrade.jpg"
+  alt="Givable donation form with gift upgrade to recurring"
+  width="1024"
+  height="600"
+/>
+
+## Publish and Share Your Form
+
+<Tabs>
+  <Tab title="Direct Link" icon="link">
+    After publishing, copy the form URL (e.g., `https://forms.givable.com/your-org/form-123`).
+    
+    Share via email, social media, or your website.
+  </Tab>
+  <Tab title="Embed Code" icon="code">
+    Generate embed code for seamless integration.
+    
+    <CodeGroup tabs="HTML,JavaScript">
+    ````html
+    <iframe src="https://forms.givable.com/your-org/form-123" width="100%" height="600" frameborder="0"></iframe>
+    ````
+    ````javascript
+    // Load form dynamically
+    const formId = 'your-org/form-123';
+    const container = document.getElementById('donation-form');
+    container.innerHTML = `<iframe src="https://forms.givable.com/${formId}" width="100%" height="600"></iframe>`;
+    ````
+    </CodeGroup>
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+Test your form with a small donation to ensure payments process correctly before promoting widely.
+</Callout>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Integrations" icon="plug" href="/authentication">
+    Connect Givable to Salesforce NPSP, Twilio, or webhooks for unified data.
+  </Card>
+  <Card title="Recurring Giving" icon="repeat" href="/introduction">
+    Set up sustainer programs to convert one-time donors.
+  </Card>
+  <Card title="Advanced Campaigns" icon="trending-up" href="#">
+    Launch multi-step fundraising campaigns.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="#">
+    Track donor engagement and revenue.
+  </Card>
+</Columns>

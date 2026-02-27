@@ -1,0 +1,122 @@
+---
+title: Introduction to Givable
+description: Discover Givable, the online giving platform built for nonprofits to create custom donation forms, launch fundraising campaigns, and grow recurring donations.
+---
+
+<Callout kind="info" title="Starter Kit Template">
+  This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
+</Callout>
+
+## Overview
+
+Givable empowers nonprofits to streamline online fundraising with intuitive tools. You can create customizable donation forms, launch engaging campaigns, and foster recurring donations to maximize donor retention and revenue. Built specifically for mission-driven organizations, Givable integrates seamlessly with your existing tech stack.
+
+<Image
+  src="https://www.givable.com/wp-content/uploads/2025/10/gvbl_donation_form.jpg"
+  alt="Screenshot of Givable's customizable online donation form for nonprofits"
+  width="1024"
+  height="576"
+  style="margin: 0 auto;"
+/>
+
+## Key Features
+
+Givable offers powerful features tailored for nonprofits. Explore the core capabilities below.
+
+<Columns cols={2}>
+  <Card title="Custom Donation Forms" icon="edit-3" href="/docs/forms">
+    Design branded forms with drag-and-drop ease. Add custom fields, messaging, and upgrade prompts to convert one-time gifts.
+  </Card>
+  <Card title="Fundraising Campaigns" icon="zap" href="/docs/campaigns">
+    Launch peer-to-peer or event-based campaigns. Track progress in real-time and engage supporters with automated updates.
+  </Card>
+  <Card title="Recurring Giving" icon="calendar" href="/docs/recurring">
+    Convert donors to sustainers effortlessly. Set flexible schedules for monthly, quarterly, or annual pledges.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/docs/integrations">
+    Connect with tools like Salesforce NPSP, SendGrid, Twilio, and Double the Donation for unified data.
+  </Card>
+</Columns>
+
+<Image
+  src="https://www.givable.com/wp-content/uploads/2025/10/gvbl_integrations-1024x519.jpg"
+  alt="Screenshot of Givable's integration options with leading nonprofit tools"
+  width="1024"
+  height="519"
+  style="margin: 0 auto;"
+/>
+
+## Benefits for Your Nonprofit
+
+Boost donor engagement and revenue with Givable's donor-centric approach.
+
+<Callout kind="success">
+  Nonprofits using Givable see up to 2x higher recurring donation rates thanks to seamless upgrade paths and multi-payment support including Apple Pay, Visa, and Mastercard.
+</Callout>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your free account at [givable.com](https://www.givable.com).
+  </Step>
+  <Step title="Create Your First Form" icon="edit-3">
+    Use the form builder to design a donation page. Customize branding and add a recurring upgrade option.
+  </Step>
+  <Step title="Embed and Share" icon="share-2">
+    Generate embed code for your website or share campaign links via email and social media.
+  </Step>
+  <Step title="Connect Integrations" icon="plug">
+    Set up webhooks or native integrations to sync donations with your CRM.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="HTML,React">
+  ```html
+  <div id="givable-form"></div>
+  <script src="https://js.givable.com/embed.js"></script>
+  <script>
+    GivableEmbed.init('your-form-id', 'YOUR_API_KEY');
+  </script>
+  ```
+  ```jsx
+  import { GivableForm } from '@givable/react';
+
+  function DonationForm() {
+    return (
+      <GivableForm
+        formId="your-form-id"
+        apiKey="YOUR_API_KEY"
+      />
+    );
+  }
+  ```
+</CodeGroup>
+
+## Navigation Guide
+
+Dive deeper into Givable's documentation.
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Build your first campaign step-by-step.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your API access and manage keys.
+  </Card>
+  <Card title="API Reference" icon="code" href="/api">
+    Full endpoint documentation and examples.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/integrations">
+    Setup guides for popular tools.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Stay updated with the latest releases.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Ready to start? Head to the [Quickstart guide](/quickstart) for hands-on instructions.
+</Callout>

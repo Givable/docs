@@ -1,0 +1,130 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, new features, and improvements in Givable.
+---
+
+## Recent Releases
+
+<Callout kind="info">
+Check this changelog regularly to stay informed about new features, improvements, and important updates for Givable. Each release includes detailed notes on changes that impact your donation forms, integrations, and recurring giving tools.
+</Callout>
+
+<Update label="2025-01-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added Twilio SMS campaign integration for automated donor notifications.
+- Introduced customizable gift upgrade prompts to convert one-time donations to recurring gifts.
+
+## Improvements
+
+- Enhanced recurring giving scheduler with quarterly and annual options.
+- Optimized donation form load times by `>30%` for better donor experience.
+
+## Bug Fixes
+
+- Fixed webhook delivery failures during high-traffic fundraising campaigns.
+- Resolved payment method display issues on mobile devices.
+
+</Update>
+
+<Update label="2024-12-10" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated Apple Pay and Google Pay for seamless donor payments.
+- Added Salesforce Nonprofit Success Pack (NPSP) sync for unified donor data.
+
+## Bug Fixes
+
+- Corrected recurring donation scheduling errors for monthly plans.
+- Patched integration sync issues with Double the Donation and Sendgrid.
+
+</Update>
+
+<Update label="2024-11-05" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched core customizable donation forms and fundraising campaign builder.
+- Enabled basic webhook support for real-time giving data export.
+
+## Breaking Changes
+
+- Updated API authentication to require `Bearer {YOUR_TOKEN}` headers.
+- Deprecated legacy payment endpoints; migrate to new `/v1/payments` paths.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to upgrade your Givable instance to the latest version.
+
+<Steps>
+  <Step title="Backup Data" icon="database">
+
+  Export your donor data and campaign configurations.
+
+  ```
+  curl -H "Authorization: Bearer YOUR_TOKEN" \
+    https://api.givable.com/v1/export?format=json
+  ```
+
+  </Step>
+  <Step title="Update Package" icon="package">
+
+  <Tabs>
+    <Tab title="npm" icon="nodejs">
+    ```
+    npm update givable-sdk@latest
+    ```
+    </Tab>
+    <Tab title="Docker" icon="docker">
+    ```
+    docker pull givable/platform:latest
+    docker-compose up -d
+    ```
+    </Tab>
+  </Tabs>
+
+  </Step>
+  <Step title="Test Integrations" icon="zap">
+
+  Verify webhooks and payment processors.
+
+  <Callout kind="tip">
+  Test with sandbox mode first: `https://api.givable.com/sandbox/webhooks`.
+  </Callout>
+
+  </Step>
+  <Step title="Deploy" icon="rocket">
+
+  Restart services and monitor logs for `>24 hours`.
+
+  </Step>
+</Steps>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="book-open" href="/quickstart">
+    Get started with donation forms in minutes.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/integrations">
+    Connect Givable with your nonprofit tools.
+  </Card>
+  <Card title="API Reference" icon="code" href="/api">
+    Build custom experiences with our APIs.
+  </Card>
+</Columns>
+
+<Expandable title="Migration Guide for v1.0 Users" default-open="false">
+
+If upgrading from early betas, review these key changes:
+
+| Old Endpoint | New Endpoint | Notes |
+|--------------|--------------|-------|
+| `/donate` | `/v1/forms/{id}/donate` | Requires form ID param |
+| `/webhook/legacy` | `/v1/webhooks` | New signature verification |
+
+</Expandable>
