@@ -36,8 +36,7 @@
             "pages": [
               {
                 "title": "Features",
-                "path": "features",
-                "icon": "file-text"
+                "path": "features"
               },
               {
                 "title": "Integrations",
@@ -47,7 +46,7 @@
             ]
           }
         ],
-        "public": false
+        "public": true
       },
       {
         "tab": "API Reference",
@@ -57,7 +56,8 @@
             "group": "Endpoints",
             "openapi": "api-reference/openapi.yaml"
           }
-        ]
+        ],
+        "public": true
       },
       {
         "tab": "Help Center",
@@ -72,7 +72,12 @@
             "group": "FAQs",
             "icon": "help-circle",
             "expandable": false,
-            "pages": []
+            "pages": [
+              {
+                "title": "Help Center/faq/how To Manage Docs",
+                "path": "help-center/faq/how-to-manage-docs"
+              }
+            ]
           },
           {
             "group": "Troubleshooting",
@@ -103,7 +108,8 @@
             "path": "changelog",
             "icon": "history"
           }
-        ]
+        ],
+        "public": true
       }
     ]
   },
