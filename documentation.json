@@ -53,19 +53,8 @@
         "public": true
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "openapi": "api-reference/openapi.yaml"
-          }
-        ],
-        "public": true
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
+        "tab": "Guide",
+        "icon": "circle-question-mark",
         "pages": [
           {
             "title": "Help Center",
@@ -110,14 +99,13 @@
       },
       {
         "tab": "Changelog",
-        "icon": "clock",
         "pages": [
           {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
+            "title": "Changelog",
+            "path": "changelog"
           }
         ],
+        "icon": "clock",
         "public": true
       }
     ]
