@@ -116,7 +116,7 @@
       }
     ]
   },
-  "template": "classic",
+  "template": "atlas",
   "logo-dark": "https://blob-cdn.documentation.ai/org-b05e1939-b191-42f4-8afc-ecdc33992c20/doc-2d7c137b-baf1-49e8-a8c1-ef737ed238ba/1772222890747-6d9m8btaddb-GVBL-logo_white_orange_darkmode.GVBL-logo_white_orange_darkmode?q=85&fm=auto&auto=compress%2Cformat",
   "logo-light": "https://blob-cdn.documentation.ai/org-b05e1939-b191-42f4-8afc-ecdc33992c20/doc-2d7c137b-baf1-49e8-a8c1-ef737ed238ba/1772222920027-z7hgpy13lj-GVBL-logo_navy_orange_lightmode.GVBL-logo_navy_orange_lightmode?q=85&fm=auto&auto=compress%2Cformat",
   "favicon": "https://blob-cdn.documentation.ai/org-b05e1939-b191-42f4-8afc-ecdc33992c20/doc-2d7c137b-baf1-49e8-a8c1-ef737ed238ba/1772222955564-sflw7xzmu1c-givable-favicon.givable-favicon?q=85&fm=auto&auto=compress%2Cformat",
