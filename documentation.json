@@ -16,7 +16,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "icon": "rocket",
+            "icon": "lucide-rocket",
             "pages": [
               {
                 "title": "Introduction",
@@ -99,17 +99,19 @@
         "public": true
       },
       {
+        "tab": "API Reference",
+        "pages": [],
+        "icon": "file-json"
+      },
+      {
         "tab": "Changelog",
-        "icon": "clock",
         "pages": [
           {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history",
-            "show-page-navigation": false
+            "title": "Changelog",
+            "path": "changelog"
           }
         ],
-        "public": true
+        "icon": "clock"
       }
     ]
   },
