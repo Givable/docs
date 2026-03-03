@@ -9,110 +9,115 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
+        "product": "Test Product",
+        "tabs": [
           {
-            "group": "Getting Started",
-            "icon": "lucide-rocket",
+            "tab": "Documentation",
+            "icon": "book",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "icon": "lucide-rocket",
+                "pages": [
+                  {
+                    "title": "Introduction",
+                    "path": "introduction",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Quickstart",
+                    "path": "quickstart",
+                    "icon": "zap"
+                  },
+                  {
+                    "title": "Migration",
+                    "path": "migration",
+                    "icon": "activity-square-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Core Concepts",
+                "icon": "layers",
+                "pages": [
+                  {
+                    "title": "Features",
+                    "path": "features"
+                  },
+                  {
+                    "title": "Integrations",
+                    "path": "integrations",
+                    "icon": "plug"
+                  }
+                ]
+              }
+            ],
+            "public": true
+          },
+          {
+            "tab": "Guides",
+            "icon": "help-circle",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "introduction",
+                "title": "Help Center",
+                "path": "help-center",
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
+                "group": "FAQs",
+                "icon": "help-circle",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Help Center/faq/how To Manage Docs",
+                    "path": "help-center/faq/how-to-manage-docs"
+                  }
+                ]
               },
               {
-                "title": "Migration",
-                "path": "migration",
-                "icon": "activity-square-icon"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "icon": "layers",
-            "pages": [
-              {
-                "title": "Features",
-                "path": "features"
+                "group": "Troubleshooting",
+                "icon": "alert-triangle",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Help Center/troubleshooting/cannot Edit Documentation",
+                    "path": "help-center/troubleshooting/cannot-edit-documentation"
+                  }
+                ]
               },
               {
-                "title": "Integrations",
-                "path": "integrations",
-                "icon": "plug"
+                "group": "Guides",
+                "icon": "book-open",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Create a New Documentation Space",
+                    "path": "help-center/guides/create-new-doc-space"
+                  }
+                ]
               }
-            ]
-          }
-        ],
-        "public": true
-      },
-      {
-        "tab": "Guides",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
+            ],
+            "public": true
           },
           {
-            "group": "FAQs",
-            "icon": "help-circle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Help Center/faq/how To Manage Docs",
-                "path": "help-center/faq/how-to-manage-docs"
-              }
-            ]
+            "tab": "API Reference",
+            "pages": [],
+            "icon": "file-json"
           },
           {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
+            "tab": "Changelog",
             "pages": [
               {
-                "title": "Help Center/troubleshooting/cannot Edit Documentation",
-                "path": "help-center/troubleshooting/cannot-edit-documentation"
+                "title": "Changelog",
+                "path": "changelog"
               }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create a New Documentation Space",
-                "path": "help-center/guides/create-new-doc-space"
-              }
-            ]
+            ],
+            "icon": "clock",
+            "public": true
           }
-        ],
-        "public": true
-      },
-      {
-        "tab": "API Reference",
-        "pages": [],
-        "icon": "file-json"
-      },
-      {
-        "tab": "Changelog",
-        "pages": [
-          {
-            "title": "Changelog",
-            "path": "changelog"
-          }
-        ],
-        "icon": "clock",
-        "public": true
+        ]
       }
     ]
   },
@@ -127,5 +132,15 @@
         "link": "https://givable.com/contact"
       }
     }
+  },
+  "ai": {
+    "page-actions": [
+      "copy",
+      "view",
+      "claude",
+      "chatgpt",
+      "perplexity",
+      "grok"
+    ]
   }
 }
