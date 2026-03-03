@@ -10,7 +10,7 @@ description: >-
   Check this changelog regularly to stay informed about new features, improvements, and important updates for Givable. Each release includes detailed notes on changes that impact your donation forms, integrations, and recurring giving tools.
 </Callout>
 
-<Update label="2025-01-15" description="v1.2.0" tags={["feature","improvement"]}>
+<Update label="2025-01-15" tags={["feature","improvement"]}>
   ## New Features
 
   - Added Twilio SMS campaign integration for automated donor notifications.
@@ -28,10 +28,6 @@ description: >-
   - Fixed webhook delivery failures during high-traffic fundraising campaigns.
 
   - Resolved payment method display issues on mobile devices.
-</Update>
-
-<Update label="2026-02-27">
-
 </Update>
 
 <Update label="2024-12-10" description="v1.1.0" tags={["feature","bugfix"]}>
@@ -61,50 +57,6 @@ description: >-
 
   - Deprecated legacy payment endpoints; migrate to new `/v1/payments` paths.
 </Update>
-
-## Upgrade Instructions
-
-Follow these steps to upgrade your Givable instance to the latest version.
-
-<Steps>
-  <Step title="Backup Data" icon="database" title-type="p">
-    Export your donor data and campaign configurations.
-
-    ```
-    curl -H "Authorization: Bearer YOUR_TOKEN" \
-      https://api.givable.com/v1/export?format=json
-    ```
-  </Step>
-
-  <Step title="Update Package" icon="package" title-type="p">
-    <Tabs>
-      <Tab title="npm" icon="nodejs">
-        ```
-        npm update givable-sdk@latest
-        ```
-      </Tab>
-
-      <Tab title="Docker" icon="docker">
-        ```
-        docker pull givable/platform:latest
-        docker-compose up -d
-        ```
-      </Tab>
-    </Tabs>
-  </Step>
-
-  <Step title="Test Integrations" icon="zap" title-type="p">
-    Verify webhooks and payment processors.
-
-    <Callout kind="tip" collapsed="false">
-      Test with sandbox mode first: `https://api.givable.com/sandbox/webhooks`.
-    </Callout>
-  </Step>
-
-  <Step title="Deploy" icon="rocket" title-type="p">
-    Restart services and monitor logs for `>24 hours`.
-  </Step>
-</Steps>
 
 ## Next Steps
 
